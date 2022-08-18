@@ -1,25 +1,214 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Overview";
 }
 
 <div class="container-fluid dashboard">
-    <h1 class="h2">Welcome to Wired Brain Coffee!</h1>
-    <hr />
-    <div class="row">
-        <div class="col-md-6">
-            
-        </div>
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    Request Help
+    <div id="escenario">
+        <div id="field-container">
+            <div class="contenedor-campo">
+                <div id="esquina-superior-izquierda"></div>
+                <div id="esquina-superior-derecha"></div>
+                <div id="esquina-inferior-izquierda"></div>
+                <div id="esquina-inferior-derecha"></div>
+                <div id="linea-vertical-medio-campo-arriba"></div>
+                <div id="linea-vertical-medio-campo-abajo"></div>
+                <div class="up-left">
+                    @foreach (var item in Model.Fields)
+                    {
+                        if (item.Id.Contains("ul"))
+                        {
+                            if (item.Name == null)
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                                
+                            }
+                            else
+                            {
+                                <a href="/reservations/edit/@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                            }
+                        }
+                    }
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Contact our IT Team</h5>
-                    <p class="card-text">Having an issue with the site? Let us know!</p>
-                    <a asp-page="help" class="btn btn-success">Request Help</a>
+                <div class="up-right">
+                    @foreach (var item in Model.Fields)
+                    {
+                        if (item.Id.Contains("ur"))
+                        {
+                            if (item.Name == null)
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                            }
+                            else
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                            }
+                        }
+                    }
+                </div>
+                <div class="down-left">
+                    @foreach (var item in Model.Fields)
+                    {
+                        if (item.Id.Contains("dl"))
+                        {
+                            if (item.Name == null)
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                            }
+                            else
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                            }
+                        }
+                    }
+                </div>
+                <div class="down-right">
+                    @foreach (var item in Model.Fields)
+                    {
+                        if (item.Id.Contains("dr"))
+                        {
+                            if (item.Name == null)
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                            }
+                            else
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                            }
+                        }
+                    }
+                </div>
+                <div id="zona-central">
+                    <div id="area-grande-izquierda"></div>
+                    <div id="area-pequena-izquierda"></div>
+                    <div id="medio-campo-izquierda"></div>
+                    <div id="semicirculo-izquierda"></div>
+                    <div id="penalty-izquierda"></div>
+                    <div id="linea-vertical-medio-campo-medio"></div>
+                    <div id="circulo-central"></div>
+                    <div class="ccu-left">
+                        @foreach (var item in Model.Fields) {
+                            if (item.Id.Contains("ccu-left"))
+                            {
+                                if (item.Name == null)
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                                }
+                                else {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                                }
+                            }
+                        }
+                    </div>
+                    <div class="ccu-right">
+                        @foreach (var item in Model.Fields) {
+                            if (item.Id.Contains("ccu-right"))
+                            {
+                                if (item.Name == null)
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                                }
+                                else {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                                }
+                            }
+                        }
+                    </div>
+                    <div class="ccd-left">
+                        @foreach (var item in Model.Fields)
+                        {
+                            if (item.Id.Contains("ccd-left"))
+                            {
+                                if (item.Name == null)
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                                }
+                                else
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                                }
+                            }
+                        }
+                    </div>
+                    <div class="ccd-right">
+                        @foreach (var item in Model.Fields)
+                        {
+                            if (item.Id.Contains("ccd-right"))
+                            {
+                                if (item.Name == null)
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                                }
+                                else
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                                }
+                            }
+                        }
+                    </div>
+                    <div class="ccc-left">
+                        @foreach (var item in Model.Fields)
+                        {
+                            if (item.Id.Contains("ccc-left"))
+                            {
+                                if (item.Name == null)
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                                }
+                                else
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                                }
+                            }
+                        }
+                    </div>
+                    <div class="ccc-right">
+                        @foreach (var item in Model.Fields)
+                        {
+                            if (item.Id.Contains("ccc-right"))
+                            {
+                                if (item.Name == null)
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                                }
+                                else
+                                {
+                                    <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                                }
+                            }
+                        }
+                    </div>
+                    <div id="area-grande-derecha"></div>
+                    <div id="area-pequena-derecha"></div>
+                    <div id="medio-campo-derecha"></div>
+                    <div id="semicirculo-derecha"></div>
+                    <div id="penalty-derecha"></div>
+                    @foreach (var item in Model.Fields)
+                    {
+                        if (item.Id.Contains("ag"))
+                        {
+                            if (item.Name == null)
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect"></a>
+                            }
+                            else
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="rect" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                            }
+                        }
+                        else if (item.Id.Contains("ccl") || item.Id.Contains("ccr"))
+                        {
+                            if (item.Name == null)
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="circle"></a>
+                            }
+                            else
+                            {
+                                <a href="/reservations/edit/@item.Id" id="@item.Id" class="circle" style="background-image: url(../images/logos/@item.ImageFile);"></a>
+                            }
+                        }
+                    }
                 </div>
             </div>
         </div>

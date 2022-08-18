@@ -1,0 +1,193 @@
+[
+  {
+    "Id": "ul1",
+    "Price": 20,
+    "Name": "Adidas",
+    "ImageFile": "adidas_logo.png"
+  },
+  {
+    "Id": "ul2",
+    "Price": 20
+  },
+  {
+    "Id": "ul3",
+    "Price": 20
+  },
+  {
+    "Id": "ur1",
+    "Price": 20
+  },
+  {
+    "Id": "ur2",
+    "Price": 20
+  },
+  {
+    "Id": "ur3",
+    "Price": 20
+  },
+  {
+    "Id": "dl1",
+    "Price": 20
+  },
+  {
+    "Id": "dl2",
+    "Price": 20
+  },
+  {
+    "Id": "dl3",
+    "Price": 20
+  },
+  {
+    "Id": "dr1",
+    "Price": 20
+  },
+  {
+    "Id": "dr2",
+    "Price": 20
+  },
+  {
+    "Id": "dr3",
+    "Price": 20
+  },
+  {
+    "Id": "agl1",
+    "Price": 15
+  },
+  {
+    "Id": "agl2",
+    "Price": 15
+  },
+  {
+    "Id": "agl3",
+    "Price": 15
+  },
+  {
+    "Id": "agl4",
+    "Price": 15
+  },
+  {
+    "Id": "agl5",
+    "Price": 15
+  },
+  {
+    "Id": "agl6",
+    "Price": 15
+  },
+  {
+    "Id": "agl7",
+    "Price": 15
+  },
+  {
+    "Id": "agl8",
+    "Price": 15
+  },
+  {
+    "Id": "agr1",
+    "Price": 15
+  },
+  {
+    "Id": "agr2",
+    "Price": 15
+  },
+  {
+    "Id": "agr3",
+    "Price": 15
+  },
+  {
+    "Id": "agr4",
+    "Price": 15
+  },
+  {
+    "Id": "agr5",
+    "Price": 15
+  },
+  {
+    "Id": "agr6",
+    "Price": 15
+  },
+  {
+    "Id": "agr7",
+    "Price": 15
+  },
+  {
+    "Id": "agr8",
+    "Price": 15
+  },
+  {
+    "Id": "ccl",
+    "Price": 50,
+    "Name": "Google",
+    "ImageFile": "Google_Logo.png"
+  },
+  {
+    "Id": "ccr",
+    "Price": 50
+  },
+  {
+    "Id": "ccu-left1",
+    "Price": 30
+  },
+  {
+    "Id": "ccu-left2",
+    "Price": 30
+  },
+  {
+    "Id": "ccu-left3",
+    "Price": 30
+  },
+  {
+    "Id": "ccu-right1",
+    "Price": 30
+  },
+  {
+    "Id": "ccu-right2",
+    "Price": 30
+  },
+  {
+    "Id": "ccu-right3",
+    "Price": 30
+  },
+  {
+    "Id": "ccd-left1",
+    "Price": 30
+  },
+  {
+    "Id": "ccd-left2",
+    "Price": 30,
+    "Name": "FAZ",
+    "ImageFile": "Frankfurter_Allgemeine_logo.png"
+  },
+  {
+    "Id": "ccd-left3",
+    "Price": 30
+  },
+  {
+    "Id": "ccd-right1",
+    "Price": 30
+  },
+  {
+    "Id": "ccd-right2",
+    "Price": 30
+  },
+  {
+    "Id": "ccd-right3",
+    "Price": 30
+  },
+  {
+    "Id": "ccc-right1",
+    "Price": 40
+  },
+  {
+    "Id": "ccc-right2",
+    "Price": 40
+  },
+
+  {
+    "Id": "ccc-left1",
+    "Price": 40
+  },
+  {
+    "Id": "ccc-left2",
+    "Price": 40
+  }
+]

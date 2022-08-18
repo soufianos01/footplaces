@@ -1,11 +1,14 @@
-using WiredBrainCoffeeAdmin.Data;
+using FootballField.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("WiredBrain") ?? "Data Source=WiredBrain.db";
+// var connectionString = builder.Configuration.GetConnectionString("WiredBrain") ?? "Data Source=WiredBrain.db";
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<WiredContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("WiredBrain")));
+
+builder.Services.AddScoped<IBookedFieldRepository, BookedFieldRepository>();
 
 var app = builder.Build();
 

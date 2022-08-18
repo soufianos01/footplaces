@@ -1,0 +1,33 @@
+﻿@page "/reservations/edit/{id}"
+@model FootballField.Pages.AddFieldModel
+@{
+}
+
+<h1>Create a reservation</h1>
+<hr />
+
+<div class="row" style="background-color:white">
+	<div class="col-md-6">
+		<form method="post" enctype="multipart/form-data">
+			<div asp-validation-summary="All"></div>
+			<div class="mb-3">
+				<label asp-for="EditField.Name">Name</label>
+				<input asp-for="EditField.Name" class="form-control" />
+				<span asp-validation-for="EditField.Name"></span>
+			</div>
+			<div class="mb-3">
+				<label asp-for="EditField.ImageFile">Current Image</label>
+				<input type="hidden" asp-for="EditField.ImageFile" class="form-control" />
+				<img src="~/images/logos/@Model.EditField.ImageFile" />
+			</div>
+			<div class="mb-3">
+				<label asp-for="EditField.Upload">Image</label>
+				<input asp-for="EditField.Upload" class="form-control" />
+			</div>
+
+			<button class="btn btn-success">Create</button>
+		</form>
+	</div>
+
+</div>
+

@@ -1,0 +1,160 @@
+.up-left,
+.up-right,
+.down-left,
+.down-right,
+.ccu-left,
+.ccu-right,
+.ccd-left,
+.ccd-right,
+.ccc-left,
+.ccc-right {
+  display: grid;
+  grid-gap: 2px;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+}
+
+.ccc-left {
+  grid-area: 6 / 6 / span 10 / span 5;
+}
+
+.ccc-right {
+  grid-area: 6 / 16 / span 10 / span 5;
+}
+
+.ccu-left {
+  grid-area: 1 / 5 / span 5 / span 8;
+}
+
+.ccu-right {
+  grid-area: 1 / 14 / span 5 / span 8;
+}
+
+.ccd-left {
+  grid-area: 16 / 5 / span 5 / span 8;
+}
+
+.ccd-right {
+  grid-area: 16 / 14 / span 5 / span 8;
+}
+
+.up-left {
+  grid-area: upleft;
+  grid-template-areas: "upleft1 upleft2 upleft3";
+}
+
+.up-right {
+  grid-area: upright;
+  grid-template-areas: "upright1 upright2 upright3";
+}
+
+.down-left {
+  grid-area: downleft;
+  grid-template-areas: "downleft1 downleft2 downleft3";
+}
+
+.down-right {
+  grid-area: downright;
+  grid-template-areas: "downright1 downright2 downright3";
+}
+
+#agl1 {
+  grid-area: 1 / 1 / span 4 / span 2;
+}
+#agl2 {
+  grid-area: 1 / 3 / span 4 / span 2;
+}
+#agl3 {
+  grid-area: 5 / 1 / span 6 / span 2;
+}
+#agl4 {
+  grid-area: 5 / 3 / span 6 / span 2;
+}
+#agl5 {
+  grid-area: 11 / 1 / span 6 / span 2;
+}
+#agl6 {
+  grid-area: 11 / 3 / span 6 / span 2;
+}
+#agl7 {
+  grid-area: 17 / 1 / span 4 / span 2;
+}
+#agl8 {
+  grid-area: 17 / 3 / span 4 / span 2;
+}
+
+#agr1 {
+  grid-area: 1 / 22 / span 4 / span 2;
+}
+#agr2 {
+  grid-area: 1 / 24 / span 4 / span 2;
+}
+#agr3 {
+  grid-area: 5 / 22 / span 6 / span 2;
+}
+#agr4 {
+  grid-area: 5 / 24 / span 6 / span 2;
+}
+#agr5 {
+  grid-area: 11 / 22 / span 6 / span 2;
+}
+#agr6 {
+  grid-area: 11 / 24 / span 6 / span 2;
+}
+#agr7 {
+  grid-area: 17 / 22 / span 4 / span 2;
+}
+#agr8 {
+  grid-area: 17 / 24 / span 4 / span 2;
+}
+
+#ccl {
+  grid-area: 5 / 11 / span 12 / span 5;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+#ccr {
+  grid-area: 5 / 11 / span 12 / span 5;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.rect,
+.circle {
+  cursor: pointer;
+}
+
+.rect:hover,
+.circle:hover {
+  background-color: rgba(255, 255, 255, 0.318);
+  opacity: 0.8;
+}
+
+.circle {
+  border-radius: 50%;
+  opacity: 0.6;
+  z-index: 100;
+}
+
+.rect {
+  z-index: 100;
+  border-radius: 10px;
+  margin: 0.3px;
+  opacity: 0.6;
+}
+
+#ul1 {
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#ccd-left2 {
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#ccl {
+    background-position: 0% 50%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
